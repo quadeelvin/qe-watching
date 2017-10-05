@@ -1,0 +1,9 @@
+{% for post in site.posts %}
+  <a href="{{ post.url }}">{{ post.title }}</a> <br>
+  {{ post.content }} <br>
+{% endfor %}
+
+{% for film in site.data.film %}
+  <hr>
+  <h1>{{ film.title }} <br> {{ film.director }} </h1> <br>
+{% endfor %}
